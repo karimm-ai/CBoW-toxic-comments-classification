@@ -45,12 +45,14 @@ Input Tokens --> Embedding Layer (CBOW Weights) --> Average Pooling --> Linear L
 
 Training Parameters:
 
-|   Loss Function   |   BCEWithLogitsLoss |
-|   Learning Rate  | 1e-3 |
-|   Optimizer   |   Adam    |
-|   Epochs  |   25 with early stopping (stopped at 18)  |
-|   Early Stopping Criteria    |   AUC does not increase for 3 epochs |
-|   Batch Size  |   512 |
+| Parameter | Value |
+|-----------|-------|
+| Loss Function | BCEWithLogitsLoss() |
+| Learning Rate | 1e-3 |
+| Optimizer | Adam |
+| Epochs | 25 with early stopping (stopped at 18) |
+| Early Stopping Criteria | AUC does not increase for 3 epochs |
+| Batch Size | 512 |
 
 ---
 
