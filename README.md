@@ -45,7 +45,7 @@ Input Tokens --> Embedding Layer (CBOW Weights) --> Average Pooling --> Linear L
 
 Training Parameters:
 
-|   Loss Function   |   BCEWithLogitsLoss() |
+|   Loss Function   |   BCEWithLogitsLoss |
 |   Learning Rate  | 1e-3 |
 |   Optimizer   |   Adam    |
 |   Epochs  |   25 with early stopping (stopped at 18)  |
