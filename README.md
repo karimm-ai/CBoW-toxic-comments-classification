@@ -31,6 +31,7 @@ Configuration:
 |Vocabulary Size|   51017   |    
 
 - Results:
+
 ![cbow_loss](cbow_loss.png)
 
 ---
@@ -40,14 +41,23 @@ Configuration:
 #### Architecture:
 
 Input Tokens
+
       ↓
+
 Embedding Layer (CBOW Weights)
+
       ↓
+
 Average Pooling
+
       ↓
+
 Linear Layer
+
       ↓
+
 6 Output Logits
+
 
 Training Parameters:
 
@@ -112,7 +122,7 @@ A per-class threshold search was performed to maximize F1 score for each label.
 - Overall Metrics
 
 |Metric|	Score after applying per-class threshold  |Score before applying per-class threshold|
-|------|------------|
+|------|------------|------------|
 |Macro ROC-AUC|	0.9648  |0.9648|
 |Micro F1|	0.6347  |0.6345|
 |Macro F1|	0.5048  |0.4340|
@@ -120,7 +130,7 @@ A per-class threshold search was performed to maximize F1 score for each label.
 - Per-Class F1 Scores
 
 |Class|	F1 Score after applying per-class threshold   |F1 Score before applying per-class threshold|
-|------|------------|
+|------|------------|---------|
 |toxic|	0.68    |0.67|
 |severe_toxic|	0.45    |0.42|
 |obscene|	0.69    |0.68|
