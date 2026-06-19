@@ -6,3 +6,7 @@ cbow_cls/
 # dataset
 
 jigsaw*
+
+# cbow
+
+best_cbow_model.pth
