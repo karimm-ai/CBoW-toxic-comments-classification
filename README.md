@@ -30,7 +30,7 @@ Configuration:
 |   Epochs  |   75  |
 |Vocabulary Size|   51017   |    
 
-- Results:
+Results:
 
 ![cbow_loss](cbow_loss.png)
 
@@ -40,33 +40,17 @@ Configuration:
 
 #### Architecture:
 
-Input Tokens
-
-      ↓
-
-Embedding Layer (CBOW Weights)
-
-      ↓
-
-Average Pooling
-
-      ↓
-
-Linear Layer
-
-      ↓
-
-6 Output Logits
+Input Tokens --> Embedding Layer (CBOW Weights) --> Average Pooling --> Linear Layer --> 6 Output Logits
 
 
 Training Parameters:
 
-|Loss Function|BCEWithLogitsLoss()|
-|Learning Rate|1e-3|
-|Optimizer|Adam|
-|Epochs|25 with early stopping (stopped at 18)|
-|Early Stopping Criteria|AUC does not increase for 3 epochs|
-|Batch Size|512|
+|   Loss Function   |   BCEWithLogitsLoss() |
+|   Learning Rate  | 1e-3 |
+|   Optimizer   |   Adam    |
+|   Epochs  |   25 with early stopping (stopped at 18)  |
+|   Early Stopping Criteria    |   AUC does not increase for 3 epochs |
+|   Batch Size  |   512 |
 
 ---
 
