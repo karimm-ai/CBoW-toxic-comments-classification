@@ -1,0 +1,8 @@
+# env
+
+__pycache__/
+cbow_cls/
+
+# dataset
+
+jigsaw*
